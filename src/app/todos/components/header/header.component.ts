@@ -8,9 +8,7 @@ import { TodosService } from '../../services/todos.service';
 export class HeaderComponent {
 
   constructor(private todoService: TodosService) {
-    this.todoService.todos$.subscribe(todos => {
-      console.log(todos);
-    })
+    this.todoService.todos$.subscribe(todos => {})
   }
 
   inputValue: string = '';
